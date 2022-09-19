@@ -1,0 +1,16 @@
+.font {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.colors {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.colors__main {
+    display: flex;
+    justify-content: space-between;
+}
