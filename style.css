@@ -1,16 +1,84 @@
 .font {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    border: 1px solid black;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid black;
 }
 
-.colors {
-    border: 2px solid black;
-    padding: 10px;
+.materi {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid black;
 }
 
 .colors__main {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transform-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.scale:hover {
+  transform: scale(1.2);
+  background: blue;
+}
+
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+.skew:hover {
+  transform: skew(45deg);
+}
+
+.translate:hover {
+  transform: translate(100px, 50px);
+}
+
+.transition {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: 2s; //scr default all properti
+}
+
+.transition-container:hover .transition {
+  transform: rotate(180deg);
+  background: blue;
+}
+
+.animasi {
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
+
+.animasi:hover {
+  animation: ubahKotak 3s;
+}
+
+@keyframes ubahKotak {
+  0% {
+    background: red;
+  }
+  50% {
+    background: yellow;
+    width: 300px;
+  }
+
+  75% {
+    background: green;
+    width: 300px;
+  }
 }
